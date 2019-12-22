@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/login_background">
+
+
+
+    <ImageButton
+        android:id="@+id/back_btn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/back"
+        android:backgroundTint="@color/white"/>
+
+    <LinearLayout
+        android:id="@+id/title_tv"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="vertical"
+        android:layout_below="@id/back_btn">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                android:text="个人信息"
+                android:textColor="#ffffff"
+                android:textSize="60dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/line"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/title_tv"/>
+
+    //个人头像
+
+    <ImageButton
+        android:id="@+id/personal_headshot_ibtn"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignLeft="@id/line"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/line"
+        android:background="@drawable/headshot" />
+
+
+    <EditText
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/userName_ev"
+        android:textSize="30dp"
+        android:hint="用户名"
+        android:textColor="@color/silver"
+        android:layout_alignTop="@id/personal_headshot_ibtn"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/personal_headshot_ibtn"/>
+
+
+    <EditText
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/name_ev"
+        android:textSize="30dp"
+        android:hint="姓名"
+        android:textColor="@color/silver"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/userName_ev"
+        android:layout_toRightOf="@id/personal_headshot_ibtn"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_centerVertical="true"
+        android:id="@+id/personalized_signature_tv"
+        android:textSize="30dp"
+        android:text="个性签名"
+        android:textColor="@color/aliceblue"
+        android:gravity="center"
+        android:background="@color/darkgrey"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/personal_headshot_ibtn"
+        android:layout_alignLeft="@id/personal_headshot_ibtn"
+        android:layout_alignRight="@id/personal_headshot_ibtn"/>
+
+    <EditText
+        android:layout_width="400dp"
+        android:layout_height="60dp"
+        android:id="@+id/personalized_signature_ev"
+        android:textSize="30dp"
+        android:textColor="@color/aliceblue"
+        android:layout_below="@id/personal_headshot_ibtn"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/personalized_signature_tv"/>
+
+    <net.qiujuer.genius.ui.widget.Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/save_btn"
+        android:text="保存"
+        android:textSize="30dp"
+        android:textColor="@color/aliceblue"
+        android:background="@drawable/button_shape"
+        android:layout_marginTop="35dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/personalized_signature_tv"
+        android:layout_alignLeft="@id/personalized_signature_tv"
+        android:layout_alignRight="@id/personalized_signature_ev"/>
+
+</RelativeLayout>

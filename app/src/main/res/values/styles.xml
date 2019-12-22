@@ -1,0 +1,35 @@
+<resources>
+
+<!--    "Theme.AppCompat.Light.NoActionBar"-->
+<!--    "QMUI.Compat.NoActionBar"-->
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="QMUI.Compat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="MainActivityTheme" parent="AppTheme"></style>
+
+    <style name="MyQMUITheme" parent="QMUI.Compat">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="AppTheme.Launcher" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@color/royalblue</item>
+    </style>
+
+    <style name="menu_labels_style" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:background">@drawable/fab_label_background</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="My_CheckBox" parent="@android:style/Widget.Material.CompoundButton.CheckBox">
+        <item name="android:colorControlActivated">@color/red</item>
+        <item name="android:colorControlNormal">@color/white</item>
+    </style>
+
+</resources>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/login_background"
+    >
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+        <ImageButton
+            android:id="@+id/back_btn"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/back"
+            android:backgroundTint="@color/white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/title_tv"
+            android:textSize="60dp"
+            android:text="设置页面"
+            android:layout_below="@id/back_btn"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/line"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/title_tv"/>
+
+
+        <TextView
+            android:id="@+id/phoneNumber_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_below="@id/line"
+            android:layout_marginTop="10dp"
+            android:background="@color/goldenrod"
+            android:text="手机号码"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/phoneNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/line"
+            android:layout_toRightOf="@id/phoneNumber_tv"
+            android:layout_marginLeft="10dp"
+            android:layout_alignTop="@id/phoneNumber_tv"
+            android:layout_alignBottom="@id/phoneNumber_tv"
+            android:layout_alignRight="@id/line"
+            android:textSize="30dp"
+            android:textColor="@color/black"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        style="@style/wrap_layout">
+        <!-- 上圆角-->
+        <LinearLayout style="@style/top_layout">
+            <Button style="@style/usertext"
+                android:id="@+id/changeCode_btn"
+                android:textSize="40dp"
+                android:text="修改密码"
+                android:layout_gravity="center_vertical"/>
+
+            <ImageView
+                style="@style/img_arrow"
+                android:layout_width="80dp"
+                android:layout_height="60dp" />
+        </LinearLayout>
+
+        <!-- 分割线 -->
+        <View style="@style/bg_line"/>
+
+        <LinearLayout style="@style/bottom_layout">
+
+            <Button
+                android:id="@+id/changePhone_btn"
+                style="@style/usertext"
+                android:text="改绑"
+                android:textSize="40dp"
+                android:layout_gravity="center_vertical"/>
+
+            <ImageView
+                style="@style/img_arrow"
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <!-- 全圆角-->
+    <LinearLayout style="@style/wrap_layout">
+        <LinearLayout style="@style/single_layout">
+            <Button style="@style/usertext"
+                android:id="@+id/logout_btn"
+                android:textSize="40dp"
+                android:text="注销"
+                android:layout_gravity="center_horizontal"/>
+
+            <ImageView
+                style="@style/img_arrow"
+                android:layout_width="80dp"
+                android:layout_height="60dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

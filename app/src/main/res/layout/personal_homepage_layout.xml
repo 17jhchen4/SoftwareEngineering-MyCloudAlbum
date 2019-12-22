@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6cf">
+
+    //个人头像
+    <ImageButton
+        android:id="@+id/personal_headshot"
+        android:layout_width="107dp"
+        android:layout_height="113dp"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/image1"/>
+
+    //用户名
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/userName_tv"
+        android:textSize="30dp"
+        android:text="用户名"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="50dp"
+        android:layout_below="@id/personal_headshot"/>
+
+    <TextView
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/userName"
+        android:textSize="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_alignTop="@id/userName_tv"
+        android:layout_toRightOf="@id/userName_tv"
+        android:layout_below="@id/personal_headshot" />
+
+    //个性签名
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/personalized_signature_tv"
+        android:textSize="30dp"
+        android:text="个性签名"
+        android:layout_marginTop="5dp"
+        android:layout_alignLeft="@id/userName_tv"
+        android:layout_below="@id/userName_tv"/>
+
+    <TextView
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/personalized_signature"
+        android:textSize="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_alignTop="@id/personalized_signature_tv"
+        android:layout_toRightOf="@id/personalized_signature_tv"/>
+
+    //分割线
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/line1"
+        android:text="------------------------------"
+        android:textSize="50dp"
+        android:textColor="@color/red"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/personalized_signature_tv"/>
+
+    //设置
+    <Button
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/setting_btn"
+        android:textSize="40dp"
+        android:text="  设置  "
+        android:background="@color/ivory"
+        android:layout_below="@id/line1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"/>
+
+    //个人信息
+    <Button
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/personal_information_btn"
+        android:textSize="40dp"
+        android:text="  个人信息  "
+        android:background="@color/ivory"
+        android:layout_below="@id/setting_btn"
+        android:layout_alignLeft="@id/setting_btn"
+        android:layout_marginTop="35dp"/>
+
+    //关于我们
+    <Button
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/aboutUs_btn"
+        android:textSize="40dp"
+        android:text="  关于我们  "
+        android:background="@color/ivory"
+        android:layout_below="@id/personal_information_btn"
+        android:layout_alignLeft="@id/setting_btn"
+        android:layout_marginTop="35dp"/>
+
+</RelativeLayout>

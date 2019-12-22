@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<FrameLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/wall_Image_item"
+        android:layout_width="88dp"
+        android:layout_height="88dp"
+        android:src="@drawable/empty_img"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="5dp"/>
+
+    <CheckBox
+        android:id="@+id/wall_Image_check"
+        android:theme="@style/My_CheckBox"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="right"
+        tools:visibility="gone">
+
+    </CheckBox>
+
+</FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mycloudalbum">
+
+    <uses-permission android:name="android.permission.CAMERA" /> <!-- 相机权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /><!-- 写入SD卡的权限：如果你希望保存相机拍照后的照片 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" /><!-- 网络权限 -->
+
+<!--    "@style/Theme.MaterialComponents.Light.DarkActionBar"-->
+<!--    "@style/QMUI.Compat"-->
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/MainActivityTheme"
+        android:name="org.litepal.LitePalApplication"
+        android:networkSecurityConfig="@xml/network_config">
+        <activity android:name=".Activity.ImageDetailsActivity"
+            android:theme="@style/MyQMUITheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activity.MainActivity"/>
+        </activity>
+
+        <activity android:name=".Activity.MainActivity">
+
+        </activity>
+
+        <activity android:name=".Activity.LoginActivity">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity android:name=".Activity.AboutUsActivity" />
+        <activity android:name=".Activity.FindPasswordActivity" />
+        <activity android:name=".Activity.PersonalHomepageActivity" />
+        <activity android:name=".Activity.PersonalInformationActivity" />
+        <activity android:name=".Activity.RegisterActivity" />
+        <activity android:name=".Activity.SettingActivity" />
+        <activity android:name=".Activity.UpdatePasswordActivity" />
+        <activity android:name=".Activity.UpdatePhoneNumberActivity" />
+        <activity android:name=".Activity.ChangePasswordActivity" />
+        <activity android:name=".Activity.SuggestionActivity" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.mycloudalbum.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+    </application>
+
+</manifest>

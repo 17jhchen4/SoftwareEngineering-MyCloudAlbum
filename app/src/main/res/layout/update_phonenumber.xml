@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6cf">
+
+    <EditText
+        android:id="@+id/oldPhoneNumber"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:hint="原号码"
+        android:textSize="20dp"/>//原号码
+
+    <EditText
+        android:id="@+id/newPhoneNumber"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:hint="新号码"
+        android:textSize="20dp"
+        android:layout_below="@id/oldPhoneNumber"
+        android:layout_alignLeft="@id/oldPhoneNumber"/>//新号码
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="80dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:text="提交"
+        android:layout_below="@id/newPhoneNumber"
+        android:layout_alignLeft="@id/newPhoneNumber"/>
+
+</RelativeLayout>

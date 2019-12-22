@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="qmui_tip_dialog_bg" format="reference"/>
+    <attr name="qmui_tip_dialog_min_width" format="dimension"/>
+    <attr name="qmui_tip_dialog_min_height" format="dimension"/>
+    <attr name="qmui_tip_dialog_padding_vertical" format="dimension"/>
+    <attr name="qmui_tip_dialog_padding_horizontal" format="dimension"/>
+    <attr name="qmui_tip_dialog_margin_horizontal" format="dimension"/>
+
+</resources>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6cf">
+
+    <ImageButton
+        android:id="@+id/back_btn"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:background="@drawable/back"
+        android:backgroundTint="@color/white"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/title_tv"
+        android:textSize="60dp"
+        android:text="关于我们"
+        android:layout_below="@id/back_btn"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/line"
+        android:text="------------------------------"
+        android:textSize="50dp"
+        android:textColor="@color/red"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/title_tv"/>
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:id="@+id/appIcon_iv"
+        android:src="@drawable/image2"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/line"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/appName_tv"
+        android:textSize="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/appIcon_iv"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/version_tv"
+        android:textSize="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/appName_tv"/>
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/version_tv">
+    </ListView>
+
+</RelativeLayout>
