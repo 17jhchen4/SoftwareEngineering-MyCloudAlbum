@@ -26,8 +26,8 @@ public class AliyunSmsUtils
     static final String domain = "dysmsapi.aliyuncs.com";
 
     // TODO 此处需要替换成开发者自己的AK(在阿里云访问控制台寻找)
-    static final String accessKeyId = "LTAI4FrXR5xpu8iForsXecZf";  // TODO 修改成自己的
-    static final String accessKeySecret = "H4Fy1kH9qA6nMcHAUhYgz3x1tkH6Z2";   // TODO 修改成自己的
+    static final String accessKeyId = "123456";  // TODO 修改成自己的
+    static final String accessKeySecret = "password";   // TODO 修改成自己的
 
     public static SendSmsResponse sendSms(String phone, String code) throws ClientException {
 
